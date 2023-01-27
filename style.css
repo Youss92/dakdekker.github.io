@@ -100,9 +100,17 @@ nav .opTele,.sluitTele{
         font-weight: 100;
         font-family: 'Teko', sans-serif;
     }
+
+    .text-box{
+        text-align: center;
+    }
+    .form-outer{
+        display: flex;
+        justify-content: center;
+    }
     /*moet weg*/
 
-    .text-box,.rechtsboven{
+    .rechtsboven{
         display: none;
     }
     /*moet weg*/
@@ -189,12 +197,15 @@ nav .opTele,.sluitTele{
         text-align: center;
     }
     .header {
-        height: 900px;
+        height: 1200px;
     }
     .homepage{
-        margin-top: 85px;
-        
+        margin-top: 70px;
+       
     }
+   
+
+   
     
     .rijen,.footer-col{
         display: none;
@@ -506,11 +517,10 @@ body{
     width: 336px;
     height: 578px;
     background-color: #C9003A;
-    float: right;
-    padding-top: 10px;
+    
+    padding-top: 20px;
     box-shadow: 0 0 9px 2px #333333;
-    margin-left: auto;
-    margin-right: auto;
+   
    
 }
 .form-input {
