@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+.header{
+    height: 1000px;
+    width: 100%;
+    background-image: linear-gradient(rgba(42,43,43,0.7),rgba(42,43,43,0.7)),url(images/foto.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
+
+}   
+nav{
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+    
+
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgba(244,245,245,255);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(205,22,79,255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+nav .opTele,.sluitTele{
+    display: none;
+}
+.rechtsboven{
+    margin-top: 0px;
+}
+
+.knop{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(244,245,245,255);
+    border: 1px solid rgba(244,245,245,255);
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.knop:hover{
+    border: 1px solid rgba(205,22,79,255);
+    background-color: rgba(205,22,79,255);
+    transition: 1s;
+    color: rgba(244,245,245,255);
+
+}
+@media(max-width:1000px){
+   .footer-col svg{
+    display:none;
+   }
+}
+@media(max-width: 767px){
+    .text-box h1{
+        font-size: 32px;
+        font-weight: 300;
+    }
+    .text-box p{
+        font-size: 25px;
+        color: #FFFFFF;
+        font-weight: 100;
+        font-family: 'Teko', sans-serif;
+    }
+    /*moet weg*/
+
+    .form-outer,.rechtsboven,.text-box{
+        display: none;
+    }
+    /*moet weg*/
+    
+    .nav-links ul li{
+        display: block;
+    
+    }
+    .nav-links{
+        position: absolute;
+        background: rgba(170,6,53,255);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -220px;
+        text-align: left;
+        padding-left: 0px;
+        z-index: 2;
+        transition: 1s;
+         
+    }  
+    
+    nav .opTele{
+        display: block;
+        color: rgba(244,245,245,255);
+        font-size: 35px;
+        margin-right: 20px;
+    }
+    nav .sluitTele{
+        display: block;
+        color: rgba(244,245,245,255);
+        font-size: 28px;
+        align-items: right;        
+    }
+    .nav-links ul{
+        padding: 15px;
+    }
+    a:hover,a:focus,a:active,a:visited,a:link{
+        text-decoration: none;
+    }
+    .rij{
+        flex-direction: column;
+    }
+    .TitelMain h1{
+        font-size: 70px ;
+    }
+    .onsImg{
+        display: none;
+    }
+    .col-lg-6 .wcu-text-box-yellow{
+        background:#FFFFFF;
+        color: #fff;
+    }
+    .col-lg-6 .wcu-text-box-yellow h3 {
+        color: #333333;
+    }
+    .col-lg-6 .wcu-text-box-yellow p{
+        color: #333333;
+    }
+    .col-lg-6 h3{
+        font-size: 30px;
+    }
+    .col-lg-6 .wcu-text-box-desc p{
+        font-size: 20px;
+    }
+    
+
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .aanvraag h1{
+        font-size: 24px;
+    }
+    .footer .info{
+        flex-direction: column;
+        height: 210px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+    
+    .huis,.tel,.email{
+        text-align: center;
+    }
+    .header {
+        height: 1500px;
+    }
+    .homepage{
+        display: flex;
+        flex-direction: column-reverse;
+        transform: translate(32%,-2%);
+        text-align: center;
+    }
+    .homepage .text-box{
+        transform: translate(-65%,12%);
+    }
+    .rijen,.footer-col{
+        display: none;
+    }
+    .footer-col1{
+        padding-left: 10%;
+    }
+    .info .footer-huis,.info .huis,.info .footer-icon,.info .email{
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    
+
+    
+    
+    
+}
+
+/* Over ons */
+
+.TitelOns{
+    
+    text-align: left;
+    padding-top: 180px;
+}
+
+.TitelMain{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/*waarom voor ons kiezen*/
+#waaromOns{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#waaromOns .row{
+    padding-top: 10px;
+}
+.wcu-text-box{
+    box-shadow: 0 0 10px #333333;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.wcu-text-box-icon{
+    font-size: 55px;
+    padding-bottom: 10px;
+    color: #C9003A;
+}
+.wcu-text-box-title{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+}
+.wcu-text-box-desc p{
+    font-size: 15px;
+
+}
+.wcu-text-box-yellow{
+    background: #ffc350 none repeat scroll 0 0;
+    overflow: hidden;
+    color: #fff;
+
+}
+.wcu-text-box-yellow .wcu-text-box-icon, .wcu-text-box-yellow p,.wcu-text-box-yellow h3{
+    color: #C9003A;
+    
+}
+
+/*waarom voor ons kiezen*/
+
+.Gespecialiseerd{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+   
+}
+.rij{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.speciaal-rij{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.speciaal-rij img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+    display: block;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    
+}
+.layer:hover{
+    background: rgba(205,22,79,0.7)
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgba(244,245,245,255);
+    font-size: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.aanvraag{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(42,43,43,0.7),rgba(42,43,43,0.7)),url(images/huis.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.aanvraag h1{
+    color: rgba(244,245,245,255);
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 60px;
+    font-weight: 600;
+
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: rgba(42,43,43,255);
+    height: 600px;
+    
+}
+body{
+    height: 100%;
+}
+.footer-onderaan{
+    
+    position: relative;
+    
+    
+}
+.footer-onderaan p{
+    color: rgba(244,245,245,255);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+        
+    
+    
+    
+}
+
+.info{
+    background-color: rgba(205,22,79,255);
+    height: 80px;
+    width: 100%;
+    text-align: left;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-top: 100px;
+    
+  
+}
+.footer-icon{
+    color: rgba(244,245,245,255);
+    font-size: 24px;
+    margin-left: 100px;
+    
+}
+.footer-huis{
+    margin-left: 100px;
+}
+
+.tel,.email{
+    color: rgba(244,245,245,255);
+    margin-left: 10px;
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.huis{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(244,245,245,255);
+}
+.tel:hover,.email:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+    
+}
+
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-size: 21px;
+   
+}
+.gratis{
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Teko', sans-serif;
+
+}
+
+
+.knoppen{
+   
+        background: linear-gradient(90deg, #ffc350, transparent)#ffc350;
+        box-shadow: 0 10px 20px -18px #333333;
+        border: none;
+        height: 50px;
+        width: 200px;
+        font-size: 28px;
+        font-weight:500;
+        color: #FFFFFF;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 47px;
+        
+       
+}
+    .knoppen:hover, .knoppen:focus{
+        background: #f1a10b;
+        transition: 0.5s;
+}
+.address-card{
+    font-size: 24px;
+    margin-top: 7px;
+    float: left;
+    margin-left: 10px;
+}
+.tellie{
+    font-size: 24px;
+    margin-top: 12px;
+    color: #FFFFFF;
+    float: left;
+    margin-left: 15px;
+}
+.knop-aanvraag{
+    background: linear-gradient(90deg, #ffc350, transparent)#ffc350;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px -18px #333333;
+    border: none;
+    height: 53px;
+    width: 244px;
+    font-size: 32px;
+    font-weight:500;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 47px;
+    
+   
+    }
+    
+.knop-aanvraag:hover, .knop-aanvraag:focus{
+    background: #f1a10b;
+    transition: 0.5s;
+}
+    .fa-chevron-circle-right{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+
+.container1 {
+    width: 336px;
+    height: 578px;
+    background-color: #C9003A;
+    float: right;
+    padding-top: 10px;
+    box-shadow: 0 0 9px 2px #333333;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.form-input {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+input ,textarea{
+    outline: none;
+    padding: 15px 20px 10px 50px;
+    font-size: 50px;
+    width: 270px;
+    background-color: rgba(170,6,53,255);
+    border: transparent;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.icon {
+    position: absolute;
+    left: 55px;
+    top: 0;
+    font-size: 24px;
+    color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif; 
+}
+.comment{
+    position: absolute;
+    left: 55px;
+    top: -34px;
+    font-size: 24px;
+    color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif; 
+}
+.area-omschrijving{
+    resize: none;
+}
+.container{
+    width: 1170px;
+    
+    
+}
+.container ul{
+    list-style: none;
+}
+.rijen{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 20px;
+    vertical-align: top;
+      
+    
+}
+.deze{
+    margin-bottom: 30px;
+    
+}
+.deze1{
+    margin-bottom: 20px;
+}
+.footer ul li a{
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    text-decoration: underline;
+}
+.footer ul li a:hover{
+    filter: brightness(0.5);
+}
+.footer-over{
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+iframe{
+   width: 300px;
+   height: 150px;
+}
