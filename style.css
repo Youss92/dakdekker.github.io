@@ -159,6 +159,7 @@ nav .opTele,.sluitTele{
     }
     .onsImg{
         display: none;
+        
     }
     .col-lg-6 .wcu-text-box-yellow{
         background:#FFFFFF;
@@ -313,6 +314,11 @@ nav .opTele,.sluitTele{
     float: left;
     display: block;
 
+}
+.onsImg{
+    padding-bottom: 20px;
+    justify-content: center;
+    display: flex;
 }
 .layer{
     background: transparent;
