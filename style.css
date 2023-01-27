@@ -102,7 +102,7 @@ nav .opTele,.sluitTele{
     }
     /*moet weg*/
 
-    .form-outer,.rechtsboven,.text-box{
+    .text-box,.rechtsboven{
         display: none;
     }
     /*moet weg*/
@@ -189,17 +189,13 @@ nav .opTele,.sluitTele{
         text-align: center;
     }
     .header {
-        height: 1500px;
+        height: 900px;
     }
     .homepage{
-        display: flex;
-        flex-direction: column-reverse;
-        transform: translate(32%,-2%);
-        text-align: center;
+        margin-top: 90px;
+        
     }
-    .homepage .text-box{
-        transform: translate(-65%,12%);
-    }
+    
     .rijen,.footer-col{
         display: none;
     }
@@ -223,7 +219,7 @@ nav .opTele,.sluitTele{
 .TitelOns{
     
     text-align: left;
-    padding-top: 180px;
+    padding-top: 80px;
 }
 
 .TitelMain{
