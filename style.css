@@ -121,17 +121,19 @@ nav .opTele,.sluitTele{
     }
     .nav-links ul li a{
         font-size: 28px;
-        color: #333333;
+        color:#FFFFFF;
+        font: bold;
+        text-decoration: none;
     }
     .nav-links ul li a:hover{
-        color: #f1a10b;
+        color: #ffc350;
 
     }
 
     .nav-links{
         position: fixed;
         background: rgba(205, 22, 80, 0.432);
-        inset: 0 0 0 40%;
+        inset: 0 0 0 0%;
         padding: min(20vh,8rem) 2rem;
         backdrop-filter: blur(1rem);
         z-index: 1000;
@@ -165,6 +167,7 @@ nav .opTele,.sluitTele{
     a:focus,a:active,a:visited,a:link{
         text-decoration: none;
     }
+    
     .rij{
         flex-direction: column;
     }
@@ -396,7 +399,8 @@ body{
     overflow-x: hidden;
 }
 .footer-onderaan{
-    
+    position: fixed;
+    padding-bottom: 0px;
     position: relative;
     
     
