@@ -117,38 +117,52 @@ nav .opTele,.sluitTele{
     
     .nav-links ul li{
         display: block;
-    
+        text-align: center;
     }
+    .nav-links ul li a{
+        font-size: 28px;
+        color: #333333;
+    }
+    .nav-links ul li a:hover{
+        color: #f1a10b;
+
+    }
+
     .nav-links{
-        position: absolute;
-        background: rgba(170,6,53,255);
-        height: 100vh;
-        width: 150px;
-        top: 0;
-        right: -220px;
-        text-align: left;
-        padding-left: 0px;
-        z-index: 2;
-        transition: 1s;
+        position: fixed;
+        background: rgba(205, 22, 80, 0.432);
+        inset: 0 0 0 40%;
+        padding: min(20vh,8rem) 2rem;
+        backdrop-filter: blur(1rem);
+        z-index: 1000;
+        transition: 850ms ease-out;
+        transform: translateX(100%);
          
     }  
+    .nav-links[data-visible="true"]{
+        transform: translateX(0%);  
+    }
+    .opTele[aria-expanded="true"]{
+        background: url('https://api.iconify.design/line-md/menu-to-close-alt-transition.svg?color=white') no-repeat center center / contain;
+        position: fixed;
+    }
     
     nav .opTele{
         display: block;
-        color: rgba(244,245,245,255);
-        font-size: 35px;
-        margin-right: 20px;
+        position: absolute;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        z-index: 9999; 
+        border: 0;
+        background: url('https://api.iconify.design/charm/menu-hamburger.svg?color=white') no-repeat center center / contain;
     }
-    nav .sluitTele{
-        display: block;
-        color: rgba(244,245,245,255);
-        font-size: 28px;
-        align-items: right;        
-    }
+  
     .nav-links ul{
-        padding: 15px;
+        padding: 2em;
     }
-    a:hover,a:focus,a:active,a:visited,a:link{
+    a:focus,a:active,a:visited,a:link{
         text-decoration: none;
     }
     .rij{
@@ -379,6 +393,7 @@ nav .opTele,.sluitTele{
 }
 body{
     height: 100%;
+    overflow-x: hidden;
 }
 .footer-onderaan{
     
