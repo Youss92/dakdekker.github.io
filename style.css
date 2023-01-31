@@ -7,7 +7,7 @@
 .header{
     height: 1000px;
     width: 100%;
-    background-image: linear-gradient(rgba(42,43,43,0.7),rgba(42,43,43,0.7)),url(images/foto.jpg);
+    background-image: linear-gradient(rgba(55,60,68,0.5),rgba(55,60,68,0.5)),url(images/achtergrond\ dakdekker.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -125,10 +125,6 @@ nav .opTele,.sluitTele{
         font: bold;
         text-decoration: none;
     }
-    .nav-links ul li a:hover{
-        color: #ffc350;
-
-    }
 
     .nav-links{
         position: fixed;
@@ -164,7 +160,7 @@ nav .opTele,.sluitTele{
     .nav-links ul{
         padding: 2em;
     }
-    a:focus,a:active,a:visited,a:link{
+    a:hover,a:focus,a:active,a:visited,a:link{
         text-decoration: none;
     }
     
@@ -289,7 +285,7 @@ nav .opTele,.sluitTele{
 
 }
 .wcu-text-box-yellow{
-    background: #ffc350 none repeat scroll 0 0;
+    background: #8d99ae none repeat scroll 0 0;
     overflow: hidden;
     color: #fff;
 
@@ -512,7 +508,7 @@ body{
     margin-left: 15px;
 }
 .knop-aanvraag{
-    background: linear-gradient(90deg, #ffc350, transparent)#ffc350;
+    background: linear-gradient(90deg, #F9C80E, transparent)#F9C80E;
     margin-top: 20px;
     box-shadow: 0 10px 20px -18px #333333;
     border: none;
