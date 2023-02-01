@@ -5,9 +5,9 @@
 }
 
 .header{
-    height: 1000px;
+    height: 760px;
     width: 100%;
-    background-image: linear-gradient(rgba(55,60,68,0.5),rgba(55,60,68,0.5)),url(images/achtergrond\ dakdekker.png);
+    background-image: linear-gradient(rgba(55,60,68,0.5),rgba(55,60,68,0.8)),url(images/sun-twilight-air-blue-background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -17,20 +17,28 @@
 }   
 nav{
     display: flex;
-    padding: 0.5% 3%;
+    padding: 0.2% 3%;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(42,43,43,0.5);
+    backdrop-filter: blur(20px);
+    margin-bottom: 30px;
+    
+    
 
 }
 nav img{
-    width: 150px;
+    width: 160px;
+    margin-left: 50px;
+    height: 55px;
     
 
 }
 .nav-links{
     flex: 1;
-    text-align: left;
+    text-align: center;
     padding-left: 30px;
+    padding-top: 2%;
 
 }
 .nav-links ul li{
@@ -43,7 +51,7 @@ nav img{
 .nav-links ul li a{
     color: rgba(244,245,245,255);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
 }
 .nav-links ul li::after{
     content: '';
@@ -476,8 +484,8 @@ body{
 
 .knoppen{
    
-        background: linear-gradient(90deg, #ffc350, transparent)#ffc350;
-        box-shadow: 0 10px 20px -18px #333333;
+        background: linear-gradient(90deg, #C9003A, transparent)#C9003A;
+        box-shadow: 10px 10px 20px -10px #333333;
         border: none;
         height: 50px;
         width: 200px;
@@ -485,13 +493,13 @@ body{
         font-weight:500;
         color: #FFFFFF;
         text-align: center;
-        border-radius: 12px;
+        border-radius: 0px;
         margin-left: 47px;
         
        
 }
     .knoppen:hover, .knoppen:focus{
-        background: #f1a10b;
+        background: #f50146;
         transition: 0.5s;
 }
 .address-card{
