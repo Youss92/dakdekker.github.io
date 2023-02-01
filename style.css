@@ -15,7 +15,7 @@
     
 
 }   
-nav{
+.nav-achtergrond{
     display: flex;
     padding: 0.2% 3%;
     justify-content: space-between;
@@ -74,6 +74,11 @@ nav .opTele,.sluitTele{
     margin-top: 0px;
 }
 
+.text-box{
+    color: #FFFFFF;
+    font-size: large;
+    padding-top: 30%;
+}
 .knop{
     display: inline-block;
     text-decoration: none;
@@ -115,7 +120,13 @@ nav .opTele,.sluitTele{
     .form-outer{
         display: flex;
         justify-content: center;
+        padding-top: 50px;
     }
+    .nav-achtergrond{
+        all: unset;
+    }
+   
+    
     /*moet weg*/
 
     .rechtsboven{
@@ -222,7 +233,8 @@ nav .opTele,.sluitTele{
         height: 1200px;
     }
     .homepage{
-        margin-top: 70px;
+        margin-top: 20px;
+
        
     }
    
