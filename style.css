@@ -193,10 +193,7 @@ nav .opTele,.sluitTele{
         display: none;
         
     }
-    .wcu-text-box{
-        margin-left: 12%;
-    }
-  
+   
     .col-lg-6 h3{
         font-size: 30px;
     }
@@ -302,7 +299,7 @@ nav .opTele,.sluitTele{
     width: 80px;
     height: 80px;
     color: #C9003A;
-    border: 3px solid #333333;
+    border: 3px solid #FFFFFF;
     transform: rotate(45deg);
     margin-bottom: 30px;
     margin-top: 16px;
