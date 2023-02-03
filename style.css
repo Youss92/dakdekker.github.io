@@ -546,7 +546,7 @@ body{
     font-size: 32px;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-family: 'Teko', sans-serif;
 
 }
@@ -586,10 +586,10 @@ body{
 }
 .knop-aanvraag{
     background: linear-gradient(90deg, #F9C80E, transparent)#F9C80E;
-    margin-top: 20px;
+    margin-top: 15px;
     box-shadow: 0 10px 20px -18px #333333;
     border: none;
-    height: 53px;
+    height: 48px;
     width: 244px;
     font-size: 32px;
     font-weight:500;
@@ -621,19 +621,27 @@ body{
    
 }
 .form-input {
+    margin-top: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.form-input-area {
     margin-top: 10px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    
-    
-   
+    justify-content: center; 
 }
+label{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
 input ,textarea{
     outline: none;
-    padding: 15px 20px 10px 50px;
+    padding: 12px 20px 10px 36px;
     font-size: 50px;
     width: 270px;
     background-color: rgba(170,6,53,255);
@@ -642,10 +650,13 @@ input ,textarea{
     color: #FFFFFF;
     
 }
+.labeltje{
+    margin-left: 34px;
+}
 
 .icon {
     position: absolute;
-    left: 55px;
+    left: 43px;
     top: 0;
     font-size: 24px;
     color: #FFFFFF;
@@ -657,7 +668,7 @@ input ,textarea{
 }
 .comment{
     position: absolute;
-    left: 55px;
+    left: 43px;
     top: -34px;
     font-size: 24px;
     color: #FFFFFF;
